@@ -11,6 +11,7 @@ export function getAppointmentsForDay(state, day) {
             appointmentsArray.push(state.appointments[key]);
           }
         }
+        return null;
       })
     }
   }
@@ -26,5 +27,22 @@ export function getInterview(state, interview) {
   }
   //return null if doesn't satisfy earlier condition
   return null;
+}
 
+export function getInterviewersForDay (state, day) {
+  const interviewersArr = [];
+  for (let dayObj of state.days) {
+    if (dayObj.name === day) {
+
+      dayObj.interviewers.map((element) => {
+        for (let key in state.interviewers) {
+          if (element === state.interviewers[key].id) {
+            interviewersArr.push(state.interviewers[key]);
+          }
+        }
+        return null;
+      })
+    }
+  }
+  return interviewersArr;
 }
