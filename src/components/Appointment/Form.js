@@ -5,7 +5,7 @@ import InterviewerList from "components/InterviewerList";
 export default function Form(props) {
   const [ student, setStudent ] = useState(props.student || "");
   const [ interviewer, setInterviewer ] = useState(props.interviewer || null);
-  
+  console.log(props);
   function reset() {
     setStudent("");
     setInterviewer(null);
@@ -31,8 +31,8 @@ export default function Form(props) {
         </form>
         <InterviewerList
           interviewers={props.interviewers}
-          value={interviewer}
           onChange={setInterviewer}
+          value={interviewer}
         />
       </section>
       <section className="appointment__card-right">
