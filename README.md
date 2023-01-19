@@ -30,33 +30,54 @@ npm run cypress
 
 ## Creating an Appointment
 
-  - Click on the + icon in an empty appointment slot
+- Click on the + icon in an empty appointment slot
 
-  - Enter the students name
+![alt text](https://github.com/facelessagony/scheduler/blob/master/screenshots/Scheduler-1.jpg)
 
-  - Select an interviewer by clicking on their picture
+- Enter the students name
 
-  - Click the Save button
+![alt text](https://github.com/facelessagony/scheduler/blob/master/screenshots/Scheduler-2.jpg)
 
-  - The appointment will be created after being successfully submitted to the backend server to be stored in the database using an Axios request (PUT)
+- Select an interviewer by clicking on their picture
+
+![alt text](https://github.com/facelessagony/scheduler/blob/master/screenshots/Scheduler-3.jpg)
+
+- Click the Save button
+
+- The appointment will be created after being successfully submitted to the backend server to be stored in the database using an Axios request (PUT)
+
+![alt text](https://github.com/facelessagony/scheduler/blob/master/screenshots/Scheduler-4.jpg)
 
 ## Deleting an Appointment
 
- - Click on the trash icon in an occupied appointment slot
+- Hover over the appointment you wish to edit
 
- - Click the Confirm button if you are sure you want to delete the appointment
+![alt text](https://github.com/facelessagony/scheduler/blob/master/screenshots/Scheduler-6.jpg)
 
- - The appointment will be deleted after being successfully submitted to the backend server to be deleted from the database using an Axios request (DELETE)
+- Click on the trash icon in an occupied appointment slot
 
+- Click the Confirm button if you are sure you want to delete the appointment
+
+- The appointment will be deleted after being successfully submitted to the backend server to be deleted from the database using an Axios request (DELETE)
+
+![alt text](https://github.com/facelessagony/scheduler/blob/master/screenshots/Scheduler-7.jpg)
 
 ## Editing an Appointment
 
-  - Click on the edit icon in an occupied appointment slot
+- Hover over the appointment you wish to edit
 
-  - Edit the students name
+![alt text](https://github.com/facelessagony/scheduler/blob/master/screenshots/Scheduler-6.jpg)
 
-  - Select an interviewer by clicking on their picture
+- Click on the edit icon in an occupied appointment slot
 
-  - Click the Save button
+- Edit the students name
 
-  - The appointment will be altered after being successfully submitted to the backend server to be stored in the database using an Axios request (PUT)
+![alt text](https://github.com/facelessagony/scheduler/blob/master/screenshots/Scheduler-2.jpg)
+
+- Select an interviewer by clicking on their picture
+
+- Click the Save button
+
+- The appointment will be altered after being successfully submitted to the backend server to be stored in the database using an Axios request (PUT)
+
+![alt text](https://github.com/facelessagony/scheduler/blob/master/screenshots/Scheduler-4.jpg)
