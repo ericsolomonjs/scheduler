@@ -1,5 +1,4 @@
 import { getAppointmentsForDay, getInterview, getInterviewersForDay} from "helpers/selectors";
-import useVisualMode from "../hooks/useVisualMode";
 
 const state = {
   days: [
