@@ -8,12 +8,15 @@ import { getInterviewersForDay, getAppointmentsForDay, getInterview } from "help
 
 
 export default function Application() {
+  //destructure useApplicationData to access its fns
   const {
     state, setDay, bookInterview, cancelInterview
   } = useApplicationData();
 
   const interviewers = getInterviewersForDay(state, state.day);
   const dailyAppointments = getAppointmentsForDay(state, state.day);
+  
+  //create array of appointments as schedule
   const schedule = dailyAppointments.map((appointment) => {
     const interview = getInterview(state, appointment.interview);
     return (
@@ -22,14 +25,14 @@ export default function Application() {
         id={appointment.id}
         time={appointment.time}
         interview={interview}
-        student={appointment.student}
+        student={appointment.student? appointment.student: ""}
         interviewers={interviewers}
         bookInterview={bookInterview}
         deleteInterview={cancelInterview}
       />
     );
   });
-
+  //return application component
   return (
     <main className="layout">
       <section className="sidebar">
